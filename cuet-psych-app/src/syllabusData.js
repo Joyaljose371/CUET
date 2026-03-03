@@ -1,8 +1,8 @@
 export const questionBank = [
   // --- MODULE 1: FOUNDATIONS & RESEARCH METHODS ---
-  { question: "Who established the first psychological laboratory in 1879?", options: ["Freud", "Wundt", "James", "Watson"], answer: "Wundt", topic: "Foundations" },
+  { question: "Who established the first psychological laboratory in 1879?", options: ["Wundt", "Freud", "James", "Watson"], answer: "Wundt", topic: "Foundations" },
   { question: "Which school of thought uses 'Introspection'?", options: ["Functionalism", "Behaviorism", "Structuralism", "Gestalt"], answer: "Structuralism", topic: "Foundations" },
-  { question: "The term 'Psychology' comes from 'Psyche' and 'Logos'. 'Logos' means:", options: ["Soul", "Study", "Mind", "Behavior"], answer: "Study", topic: "Foundations" },
+  { question: "The term 'Psychology' comes from 'Psyche' and 'Logos'. 'Logos' means:", options: ["Soul", "Mind", "Behavior", "Study"], answer: "Study", topic: "Foundations" },
   { question: "Who is the father of American Psychology?", options: ["William James", "B.F. Skinner", "Carl Rogers", "John Dewey"], answer: "William James", topic: "Foundations" },
   { question: "A testable prediction about a relationship between variables is a:", options: ["Theory", "Fact", "Hypothesis", "Law"], answer: "Hypothesis", topic: "Research" },
   { question: "In an experiment, the variable that is measured is the:", options: ["Independent", "Dependent", "Control", "Extraneous"], answer: "Dependent", topic: "Research" },
@@ -23,7 +23,7 @@ export const questionBank = [
   { question: "The insulation layer around an axon is the:", options: ["Dendrite", "Myelin Sheath", "Node of Ranvier", "Soma"], answer: "Myelin Sheath", topic: "Biological" },
   { question: "The 'All-or-None' principle applies to:", options: ["Memory", "Neural Firing", "Learning", "Perception"], answer: "Neural Firing", topic: "Biological" },
 
-  // --- MODULE 3: COGNITIVE PROCESSES (LEARNING, MEMORY, INTELLIGENCE) ---
+  // --- MODULE 3: COGNITIVE PROCESSES ---
   { question: "In Pavlov's experiment, the food was the:", options: ["CS", "CR", "UCS", "UCR"], answer: "UCS", topic: "Learning" },
   { question: "Who proposed the 'Law of Effect'?", options: ["Skinner", "Pavlov", "Thorndike", "Bandura"], answer: "Thorndike", topic: "Learning" },
   { question: "Reinforcing behavior every 5 minutes is a:", options: ["Fixed Ratio", "Fixed Interval", "Variable Ratio", "Variable Interval"], answer: "Fixed Interval", topic: "Learning" },
@@ -47,10 +47,10 @@ export const questionBank = [
   { question: "A student blames the teacher for a fail grade. This is:", options: ["Rationalization", "Projection", "Displacement", "Reaction Formation"], answer: "Rationalization", topic: "Personality" },
   { question: "Which trait involves being organized and disciplined?", options: ["Agreeableness", "Conscientiousness", "Openness", "Extraversion"], answer: "Conscientiousness", topic: "Personality" },
 
-  // --- MODULE 5: DEVELOPMENTAL PSYCHOLOGY ---
+  // --- MODULE 5: DEVELOPMENTAL ---
   { question: "Piaget's first stage of cognitive development is:", options: ["Pre-operational", "Sensorimotor", "Concrete", "Formal"], answer: "Sensorimotor", topic: "Development" },
   { question: "The 'Identity vs Role Confusion' stage occurs in:", options: ["Childhood", "Adolescence", "Early Adulthood", "Old Age"], answer: "Adolescence", topic: "Development" },
-  { question: "Object Permanence is achieved in which stage?", options: ["Sensorimotor", "Pre-operational", "Concrete", "Formal"], answer: "Sensorimotor", topic: "Development" },
+  { question: "Object Permanence is achieved in which stage?", options: ["Pre-operational", "Concrete", "Sensorimotor", "Formal"], answer: "Sensorimotor", topic: "Development" },
   { question: "Who proposed the 8 stages of Psychosocial Development?", options: ["Piaget", "Freud", "Erikson", "Kohlberg"], answer: "Erikson", topic: "Development" },
   { question: "The 'Strange Situation' test measures:", options: ["IQ", "Attachment", "Memory", "Vision"], answer: "Attachment", topic: "Development" },
   { question: "Conservation is learned in which Piaget stage?", options: ["Sensorimotor", "Pre-operational", "Concrete Operational", "Formal"], answer: "Concrete Operational", topic: "Development" },
@@ -59,22 +59,22 @@ export const questionBank = [
   { question: "The ZPD (Zone of Proximal Development) was proposed by:", options: ["Piaget", "Vygotsky", "Bruner", "Bandura"], answer: "Vygotsky", topic: "Development" },
   { question: "Which parenting style is most 'Strict'?", options: ["Authoritarian", "Authoritative", "Permissive", "Neglectful"], answer: "Authoritarian", topic: "Development" },
 
-  // --- SOCIAL PSYCHOLOGY ---
-  { question: "The tendency to work less hard in a group is:", options: ["Social Facilitation", "Social Loafing", "Groupthink", "Polarization"], answer: "Social Loafing", topic: "Social" },
+  // --- MODULE 6: SOCIAL PSYCHOLOGY ---
+  { question: "The tendency to work less hard in a group is:", options: ["Social Facilitation", "Groupthink", "Polarization", "Social Loafing"], answer: "Social Loafing", topic: "Social" },
   { question: "Who conducted the 'Line Judgment' conformity study?", options: ["Milgram", "Asch", "Zimbardo", "Festinger"], answer: "Asch", topic: "Social" },
   { question: "The Milgram experiment studied:", options: ["Conformity", "Obedience", "Altruism", "Aggression"], answer: "Obedience", topic: "Social" },
   { question: "Cognitive Dissonance theory was proposed by:", options: ["Heider", "Festinger", "Allport", "Lewin"], answer: "Festinger", topic: "Social" },
   { question: "Helping others with no reward is:", options: ["Egoism", "Altruism", "Cooperation", "Empathy"], answer: "Altruism", topic: "Social" },
 
-  // --- ABNORMAL / HEALTH PSYCHOLOGY ---
+  // --- MODULE 7: ABNORMAL / HEALTH ---
   { question: "The current manual used for diagnosing disorders is:", options: ["ICD-10", "DSM-5", "MMPI-2", "BDI"], answer: "DSM-5", topic: "Abnormal" },
   { question: "Fear of open spaces is:", options: ["Social Phobia", "Agoraphobia", "Claustrophobia", "Acrophobia"], answer: "Agoraphobia", topic: "Abnormal" },
   { question: "Which disorder involves 'Manic' and 'Depressive' episodes?", options: ["Schizophrenia", "Bipolar Disorder", "OCD", "PTSD"], answer: "Bipolar Disorder", topic: "Abnormal" },
   { question: "Word salad and hallucinations are symptoms of:", options: ["Anxiety", "Schizophrenia", "Depression", "Autism"], answer: "Schizophrenia", topic: "Abnormal" },
   { question: "Hans Selye proposed the GAS model. GAS stands for:", options: ["General Adaptation Syndrome", "General Anxiety System", "Global Adaptive State", "Goal Action Stage"], answer: "General Adaptation Syndrome", topic: "Health" },
 
-  // --- ADDITIONAL SYLLABUS SPECIFIC (140-200) ---
-  { question: "The 'Law of Pragnanz' belongs to which school?", options: ["Behaviorism", "Gestalt", "Humanism", "Cognitive"], answer: "Gestalt", topic: "Foundations" },
+  // --- MODULE 8: ADDITIONAL SYLLABUS ---
+  { question: "The 'Law of Pragnanz' belongs to which school?", options: ["Behaviorism", "Humanism", "Cognitive", "Gestalt"], answer: "Gestalt", topic: "Foundations" },
   { question: "Which lobe contains the Motor Cortex?", options: ["Frontal", "Parietal", "Temporal", "Occipital"], answer: "Frontal", topic: "Biological" },
   { question: "Weber's Law relates to:", options: ["Learning", "Just Noticeable Difference", "Memory Decay", "IQ"], answer: "Just Noticeable Difference", topic: "Sensation" },
   { question: "The 16PF personality questionnaire was created by:", options: ["Allport", "Cattell", "Eysenck", "Costa"], answer: "Cattell", topic: "Personality" },
@@ -85,11 +85,10 @@ export const questionBank = [
   { question: "Which is a 'Negative' symptom of Schizophrenia?", options: ["Hallucinations", "Delusions", "Flat Affect", "Disorganized Speech"], answer: "Flat Affect", topic: "Abnormal" },
   { question: "The study of the relationship between stress and illness is:", options: ["Clinical Psych", "Health Psychology", "Social Psych", "Forensic Psych"], answer: "Health Psychology", topic: "Health" },
   
-  // (Note: To hit 200, duplicate similar key concepts with different phrasing or add minor variations)
-  // ... Adding more variations ...
+  // --- MODULE 9: MOTIVATION & EMOTION ---
   { question: "According to Maslow, which needs must be met first?", options: ["Safety", "Physiological", "Love", "Self-esteem"], answer: "Physiological", topic: "Motivation" },
   { question: "Who developed the concept of 'Client-Centered Therapy'?", options: ["Freud", "Beck", "Rogers", "Ellis"], answer: "Rogers", topic: "Therapy" },
-  { question: "Which neurotransmitter is the main inhibitory one?", options: ["Glutamate", "GABA", "Dopamine", "Norepinephrine"], answer: "GABA", topic: "Biological" },
+  { question: "Which neurotransmitter is the main inhibitory one?", options: ["Glutamate", "Dopamine", "Norepinephrine", "GABA"], answer: "GABA", topic: "Biological" },
   { question: "The 'Halo Effect' is a bias in:", options: ["Memory", "Social Perception", "Learning", "Sensation"], answer: "Social Perception", topic: "Social" },
   { question: "Which schedule of reinforcement is most resistant to extinction?", options: ["Fixed Ratio", "Variable Ratio", "Fixed Interval", "Continuous"], answer: "Variable Ratio", topic: "Learning" },
   { question: "A person washing hands 50 times a day likely has:", options: ["Panic Disorder", "OCD", "Phobia", "PTSD"], answer: "OCD", topic: "Abnormal" },
@@ -97,6 +96,8 @@ export const questionBank = [
   { question: "Who proposed the 'G-factor' of intelligence?", options: ["Gardner", "Spearman", "Thurstone", "Guilford"], answer: "Spearman", topic: "Intelligence" },
   { question: "Projecting one's own flaws onto others is:", options: ["Displacement", "Projection", "Sublimation", "Denial"], answer: "Projection", topic: "Personality" },
   { question: "The sensory relay for smell bypasses the:", options: ["Thalamus", "Hypothalamus", "Cortex", "Bulb"], answer: "Thalamus", topic: "Biological" },
+
+  // --- MODULE 10: ADVANCED COGNITIVE & BIO ---
   { question: "Short term memory lasts roughly how long without rehearsal?", options: ["2 seconds", "20 seconds", "2 minutes", "20 minutes"], answer: "20 seconds", topic: "Memory" },
   { question: "In classical conditioning, the CR is usually similar to the:", options: ["CS", "UCS", "UCR", "Neutral Stimulus"], answer: "UCR", topic: "Learning" },
   { question: "Who studied the 'Automatic Processing' of memory?", options: ["Ebbinghaus", "Sperling", "Miller", "Baddeley"], answer: "Ebbinghaus", topic: "Memory" },
@@ -107,103 +108,49 @@ export const questionBank = [
   { question: "Standard Deviation is a measure of:", options: ["Central tendency", "Dispersion", "Correlation", "Significance"], answer: "Dispersion", topic: "Research" },
   { question: "The median of 2, 4, 6, 8, 10 is:", options: ["4", "5", "6", "8"], answer: "6", topic: "Research" },
   { question: "Who developed Rational Emotive Behavior Therapy (REBT)?", options: ["Aaron Beck", "Albert Ellis", "Sigmund Freud", "Carl Jung"], answer: "Albert Ellis", topic: "Therapy" },
-  // Add these to your syllabusData.js questionBank
-  { 
-    question: "Who among the following felt that the soul could exist separately from the body?", 
-    options: ["Plato", "De Anima", "Rene Descartes", "Gustav Fechner"], 
-    answer: "Plato", 
-    topic: "Foundations" 
-  },
-  { 
-    question: "The ability of the brain to adapt to the environment and replace function following damage is known as:", 
-    options: ["Lateralization", "Localization", "Neuroplasticity", "Neural degeneration"], 
-    answer: "Neuroplasticity", 
-    topic: "Biological" 
-  },
-  { 
-    question: "Which specific area of the brain is primarily responsible for speech production?", 
-    options: ["Wernicke's area", "Broca's area", "Motor cortex", "Somatosensory cortex"], 
-    answer: "Broca's area", 
-    topic: "Biological" 
-  },
-  { 
-    question: "The cell body of a neuron, responsible for maintaining its life, is called the:", 
-    options: ["Dendrite", "Axon", "Soma", "Glial cell"], 
-    answer: "Soma", 
-    topic: "Biological" 
-  },
-  { 
-    question: "The spinal cord is considered a major component of which nervous system?", 
-    options: ["Autonomic", "Somatic", "Peripheral", "Central"], 
-    answer: "Central", 
-    topic: "Biological" 
-  },
-  { 
-    question: "Chemical substances that mimic or enhance neurotransmitter effects are called:", 
-    options: ["Agonists", "Antagonists", "Antalogists", "Agnologists"], 
-    answer: "Agonists", 
-    topic: "Biological" 
-  },
-  { 
-    question: "Which of these neurotransmitters is most closely linked to calming anxiety?", 
-    options: ["GABA", "Acetylcholine", "Glutamic acid", "Dopamine"], 
-    answer: "GABA", 
-    topic: "Biological" 
-  },
-  { 
-    question: "The Hippocampus is a brain structure primarily involved in:", 
-    options: ["Emotion", "Balance Control", "Memory Formation", "Fear"], 
-    answer: "Memory Formation", 
-    topic: "Biological" 
-  },
-  { 
-    question: "Which therapy technique is explicitly based on the principle of Operant Conditioning?", 
-    options: ["Systematic desensitization", "Aversive conditioning", "Behaviour Modification", "Flooding"], 
-    answer: "Behaviour Modification", 
-    topic: "Learning" 
-  },
-  { 
-    question: "In Operant Conditioning, which of the following is true regarding responses?", 
-    options: ["Responses are involuntary", "Responses are voluntary", "Goal is to decrease response rate", "Reinforcement must be delayed"], 
-    answer: "Responses are voluntary", 
-    topic: "Learning" 
-  },
-  { 
-    question: "Being grounded (losing freedom) due to disobedience is an example of:", 
-    options: ["Positive Reinforcement", "Negative Reinforcement", "Punishment", "Extinction"], 
-    answer: "Punishment", 
-    topic: "Learning" 
-  },
 
-  // --- MODULE 6: MOTIVATION & EMOTION ---
+  // --- MODULE 11: SPECIFIC CONCEPTS ---
+  { question: "Who among the following felt that the soul could exist separately from the body?", options: ["Plato", "De Anima", "Rene Descartes", "Gustav Fechner"], answer: "Plato", topic: "Foundations" },
+  { question: "The ability of the brain to adapt to the environment and replace function following damage is known as:", options: ["Lateralization", "Localization", "Neuroplasticity", "Neural degeneration"], answer: "Neuroplasticity", topic: "Biological" },
+  { question: "Which specific area of the brain is primarily responsible for speech production?", options: ["Wernicke's area", "Broca's area", "Motor cortex", "Somatosensory cortex"], answer: "Broca's area", topic: "Biological" },
+  { question: "The cell body of a neuron, responsible for maintaining its life, is called the:", options: ["Dendrite", "Axon", "Soma", "Glial cell"], answer: "Soma", topic: "Biological" },
+  { question: "The spinal cord is considered a major component of which nervous system?", options: ["Autonomic", "Somatic", "Peripheral", "Central"], answer: "Central", topic: "Biological" },
+  { question: "Chemical substances that mimic or enhance neurotransmitter effects are called:", options: ["Agonists", "Antagonists", "Antalogists", "Agnologists"], answer: "Agonists", topic: "Biological" },
+  { question: "Which of these neurotransmitters is most closely linked to calming anxiety?", options: ["GABA", "Acetylcholine", "Glutamic acid", "Dopamine"], answer: "GABA", topic: "Biological" },
+  { question: "The Hippocampus is a brain structure primarily involved in:", options: ["Emotion", "Balance Control", "Memory Formation", "Fear"], answer: "Memory Formation", topic: "Biological" },
+  { question: "Which therapy technique is explicitly based on the principle of Operant Conditioning?", options: ["Systematic desensitization", "Aversive conditioning", "Behaviour Modification", "Flooding"], answer: "Behaviour Modification", topic: "Learning" },
+  { question: "In Operant Conditioning, which of the following is true regarding responses?", options: ["Responses are involuntary", "Responses are voluntary", "Goal is to decrease response rate", "Reinforcement must be delayed"], answer: "Responses are voluntary", topic: "Learning" },
+  { question: "Being grounded (losing freedom) due to disobedience is an example of:", options: ["Positive Reinforcement", "Negative Reinforcement", "Punishment", "Extinction"], answer: "Punishment", topic: "Learning" },
+
+  // --- MODULE 12: MOTIVATION & EMOTION ---
   { question: "The 'Drive-Reduction Theory' of motivation was proposed by:", options: ["Hull", "Maslow", "McClelland", "Vroom"], answer: "Hull", topic: "Motivation" },
-  { question: "Which theory states that we feel emotion AFTER our body reacts (e.g., I'm sad because I'm crying)?", options: ["Cannon-Bard", "James-Lange", "Schachter-Singer", "Lazarus"], answer: "James-Lange", topic: "Emotion" },
+  { question: "Which theory states that we feel emotion AFTER our body reacts?", options: ["Cannon-Bard", "James-Lange", "Schachter-Singer", "Lazarus"], answer: "James-Lange", topic: "Emotion" },
   { question: "The 'Yerkes-Dodson Law' suggests performance is best at:", options: ["Low arousal", "High arousal", "Moderate arousal", "Zero arousal"], answer: "Moderate arousal", topic: "Motivation" },
   { question: "Which brain structure acts as the 'Hunger Center'?", options: ["Thalamus", "Hypothalamus", "Pons", "Medulla"], answer: "Hypothalamus", topic: "Motivation" },
   { question: "The need for 'Self-Actualization' is at which level of Maslow's hierarchy?", options: ["Bottom", "Middle", "Top", "Second"], answer: "Top", topic: "Motivation" },
 
-  // --- MODULE 7: SENSATION & PERCEPTION ---
+  // --- MODULE 13: SENSATION & PERCEPTION ---
   { question: "The conversion of physical energy into neural impulses is:", options: ["Perception", "Transduction", "Adaptation", "Coding"], answer: "Transduction", topic: "Sensation" },
   { question: "The smallest level of stimulus energy required for detection 50% of the time is:", options: ["JND", "Absolute Threshold", "Signal Detection", "Difference Threshold"], answer: "Absolute Threshold", topic: "Sensation" },
   { question: "Which cells in the eye are responsible for color vision?", options: ["Rods", "Cones", "Ganglion", "Bipolar"], answer: "Cones", topic: "Sensation" },
   { question: "The sense of body position and movement of body parts is:", options: ["Vestibular", "Kinesthesis", "Olfaction", "Gustation"], answer: "Kinesthesis", topic: "Sensation" },
   { question: "The Gestalt principle where we fill in gaps to see a complete object is:", options: ["Proximity", "Continuity", "Closure", "Similarity"], answer: "Closure", topic: "Perception" },
 
-  // --- MODULE 8: THERAPEUTIC APPROACHES ---
+  // --- MODULE 14: THERAPY ---
   { question: "Which therapy uses 'Empty Chair' techniques?", options: ["Psychoanalysis", "Gestalt Therapy", "REBT", "CBT"], answer: "Gestalt Therapy", topic: "Therapy" },
   { question: "Systematic Desensitization is primarily used to treat:", options: ["Depression", "Phobias", "Schizophrenia", "Bipolar"], answer: "Phobias", topic: "Therapy" },
   { question: "Transference and Resistance are key concepts in:", options: ["Humanistic Therapy", "Psychoanalysis", "Behavioral Therapy", "Group Therapy"], answer: "Psychoanalysis", topic: "Therapy" },
   { question: "The primary goal of CBT (Cognitive Behavioral Therapy) is to change:", options: ["Maladaptive thoughts", "Unconscious drives", "Childhood memories", "Dream content"], answer: "Maladaptive thoughts", topic: "Therapy" },
   { question: "Who developed 'Client-Centered Therapy'?", options: ["Albert Ellis", "Aaron Beck", "Carl Rogers", "Viktor Frankl"], answer: "Carl Rogers", topic: "Therapy" },
 
-  // --- MODULE 9: STATISTICS & TESTING ---
+  // --- MODULE 15: STATISTICS ---
   { question: "A distribution where the mean, median, and mode are identical is:", options: ["Skewed", "Normal", "Bimodal", "Kurtotic"], answer: "Normal", topic: "Statistics" },
   { question: "The 'p-value' in research helps determine:", options: ["Validity", "Statistical Significance", "Reliability", "Skewness"], answer: "Statistical Significance", topic: "Statistics" },
   { question: "A test that measures what it claims to measure is:", options: ["Reliable", "Valid", "Standardized", "Objective"], answer: "Valid", topic: "Testing" },
   { question: "The consistency of test scores over time is called:", options: ["Reliability", "Validity", "Norming", "Item analysis"], answer: "Reliability", topic: "Testing" },
   { question: "Which scale of measurement has a 'True Zero' point?", options: ["Nominal", "Ordinal", "Interval", "Ratio"], answer: "Ratio", topic: "Statistics" },
 
-  // --- MODULE 10: INDUSTRIAL/ORGANIZATIONAL & MISC ---
+  // --- MODULE 16: I/O & COGNITIVE ---
   { question: "The 'Hawthorne Effect' refers to:", options: ["Improved performance when watched", "Social loafing", "Leader bias", "Groupthink"], answer: "Improved performance when watched", topic: "I/O" },
   { question: "A state of focused consciousness on a single stimulus is:", options: ["Divided attention", "Selective attention", "Automaticity", "Vigilance"], answer: "Selective attention", topic: "Cognitive" },
   { question: "The 'Flynn Effect' refers to the worldwide rise in:", options: ["Anxiety", "IQ scores", "Population", "Depression"], answer: "IQ scores", topic: "Intelligence" },
@@ -213,8 +160,163 @@ export const questionBank = [
   { question: "The smallest unit of sound in language is a:", options: ["Morpheme", "Phoneme", "Syntax", "Semantics"], answer: "Phoneme", topic: "Cognitive" },
   { question: "The tendency to search for info that supports our beliefs is:", options: ["Hindsight bias", "Confirmation bias", "Availability heuristic", "Fixation"], answer: "Confirmation bias", topic: "Cognitive" },
   { question: "A mental 'rule of thumb' for problem-solving is a:", options: ["Algorithm", "Heuristic", "Prototype", "Concept"], answer: "Heuristic", topic: "Cognitive" },
-  { question: "Who proposed the theory of 'Multiple Intelligences'?", options: ["Spearman", "Sternberg", "Howard Gardner", "Binet"], answer: "Howard Gardner", topic: "Intelligence" }
-];
+  { question: "Who proposed the theory of 'Multiple Intelligences'?", options: ["Spearman", "Sternberg", "Howard Gardner", "Binet"], answer: "Howard Gardner", topic: "Intelligence" },
 
-// NOTE: I have provided a high-quality list of 100 questions covering the most important parts. 
-// To make it exactly 200, you can copy these and slightly reword the question/options.
+  // --- MODULE 17: INTEL & PERSONALITY ---
+  { question: "Who proposed the 'Structure of Intellect' model involving 180 cells?", options: ["J.P. Guilford", "Howard Gardner", "Arthur Jensen", "Robert Sternberg"], answer: "J.P. Guilford", topic: "Intelligence" },
+  { question: "The concept of 'Mental Age' was first introduced by whom?", options: ["Lewis Terman", "Alfred Binet", "David Wechsler", "Charles Spearman"], answer: "Alfred Binet", topic: "Intelligence" },
+  { question: "Which theory distinguishes between Componential, Experiential, and Contextual intelligence?", options: ["Multiple Intelligence Theory", "Triarchic Theory", "Two-Factor Theory", "PASS Model"], answer: "Triarchic Theory", topic: "Intelligence" },
+  { question: "Aptitude tests are used primarily to predict:", options: ["Past achievements", "Current interests", "Future performance", "Personality traits"], answer: "Future performance", topic: "Intelligence" },
+  { question: "Which part of the personality, according to Freud, works on the Moral Principle?", options: ["Id", "Ego", "Libido", "Superego"], answer: "Superego", topic: "Personality" },
+  { question: "Carl Jung referred to the inherited reservoir of memory traces as:", options: ["Personal unconscious", "Collective unconscious", "Archetypes", "Shadow"], answer: "Collective unconscious", topic: "Personality" },
+  { question: "The 'Big Five' factors include: Openness, Conscientiousness, Extraversion, Agreeableness, and:", options: ["Neuroticism", "Narcissism", "Novelty", "Negativity"], answer: "Neuroticism", topic: "Personality" },
+  { question: "Which test uses 10 inkblots to analyze personality?", options: ["TAT", "16 PF", "Rorschach Test", "MMPI"], answer: "Rorschach Test", topic: "Personality" },
+  { question: "A persistent, irrational fear of a specific object or situation is called:", options: ["Panic Disorder", "GAD", "Phobia", "OCD"], answer: "Phobia", topic: "Abnormal" },
+  { question: "Which neurotransmitter is most commonly linked to Schizophrenia?", options: ["Serotonin", "Dopamine", "Endorphins", "Melatonin"], answer: "Dopamine", topic: "Abnormal" },
+  { question: "Bulimia Nervosa is characterized by:", options: ["Self-starvation", "Binge eating followed by purging", "Lack of sleep", "Fear of heights"], answer: "Binge eating followed by purging", topic: "Abnormal" },
+
+  // --- MODULE 18: THERAPY & SOCIAL ---
+  { question: "Who developed Client-Centered Therapy?", options: ["Sigmund Freud", "Carl Rogers", "Aaron Beck", "Albert Ellis"], answer: "Carl Rogers", topic: "Therapy" },
+  { question: "RET (Rational Emotive Therapy) was formulated by:", options: ["Victor Frankl", "Carl Jung", "Albert Ellis", "B.F. Skinner"], answer: "Albert Ellis", topic: "Therapy" },
+  { question: "The technique of 'Logotherapy' focuses on finding:", options: ["Childhood trauma", "Meaning in life", "Irrational thoughts", "Dream symbols"], answer: "Meaning in life", topic: "Therapy" },
+  { question: "Changing one's behavior due to direct orders from an authority figure is:", options: ["Conformity", "Compliance", "Obedience", "Cooperation"], answer: "Obedience", topic: "Social" },
+  { question: "The tendency of people to perform better on simple tasks when others are watching is:", options: ["Social Loafing", "Social Facilitation", "Groupthink", "Deindividuation"], answer: "Social Facilitation", topic: "Social" },
+  { question: "The 'ABC' components of attitude stand for:", options: ["Affective, Behavioral, Cognitive", "Action, Belief, Concept", "Attribute, Bias, Conflict", "Apathy, Benevolence, Care"], answer: "Affective, Behavioral, Cognitive", topic: "Social" },
+  { question: "When we believe that everyone in an out-group is the same, it is called:", options: ["Stereotyping", "Discrimination", "Fundamental Attribution Error", "Scapegoating"], answer: "Stereotyping", topic: "Social" },
+  { question: "Who proposed the 'Balance Theory' of attitude change?", options: ["Fritz Heider", "Leon Festinger", "Carl Hovland", "Richard Petty"], answer: "Fritz Heider", topic: "Social" },
+  { question: "The 'P-O-X' triangle in Balance Theory represents:", options: ["Person, Other, Object", "Point, Order, X-axis", "Power, Organization, Xenophobia", "Pattern, Opinion, X-factor"], answer: "Person, Other, Object", topic: "Social" },
+  { question: "A negative attitude towards a group without any factual basis is:", options: ["Prejudice", "Discrimination", "Pro-sociality", "Social Loafing"], answer: "Prejudice", topic: "Social" },
+  { question: "Which of these is a strategy to reduce prejudice?", options: ["Inter-group contact", "Social distance", "Competition", "Isolation"], answer: "Inter-group contact", topic: "Social" },
+  { question: "The tendency to give more weight to internal factors than situational factors in others' behavior is:", options: ["Fundamental Attribution Error", "Self-serving bias", "Halo effect", "Primacy effect"], answer: "Fundamental Attribution Error", topic: "Social" },
+  { question: "If you change your attitude because of a logical argument, you used the:", options: ["Central route", "Peripheral route", "Cognitive route", "Direct route"], answer: "Central route", topic: "Social" },
+  { question: "Pro-social behavior is primarily motivated by:", options: ["Empathy", "Egoism", "Greed", "Fear"], answer: "Empathy", topic: "Social" },
+  { question: "The 'Bystander Effect' suggests that as the number of witnesses increases, the likelihood of help:", options: ["Decreases", "Increases", "Stays the same", "Doubles"], answer: "Decreases", topic: "Social" },
+
+  // --- MODULE 19: GROUPS & ENVIRONMENT ---
+  { question: "A collection of people present at the same place by chance is a:", options: ["Crowd", "Team", "Organization", "Family"], answer: "Crowd", topic: "Social" },
+  { question: "The feeling of loss of individuality in a large group is:", options: ["Deindividuation", "Social Facilitation", "Groupthink", "Polarization"], answer: "Deindividuation", topic: "Social" },
+  { question: "Who developed the 'Social Identity Theory'?", options: ["Tajfel and Turner", "Asch and Milgram", "Sherif and Lewin", "Bandura"], answer: "Tajfel and Turner", topic: "Social" },
+  { question: "Extreme group cohesiveness that leads to poor decision making is:", options: ["Groupthink", "Group Polarization", "Cooperation", "Social Loafing"], answer: "Groupthink", topic: "Social" },
+  { question: "In the 'Robbers Cave' experiment, how was conflict reduced?", options: ["Superordinate goals", "Negotiation", "Fines", "Physical barriers"], answer: "Superordinate goals", topic: "Social" },
+  { question: "A goal that requires the cooperation of two or more groups to achieve is:", options: ["Superordinate goal", "Competitive goal", "Individual goal", "Primary goal"], answer: "Superordinate goal", topic: "Social" },
+  { question: "The study of the relationship between living beings and their environment is:", options: ["Ecology", "Sociology", "Biology", "Psychology"], answer: "Ecology", topic: "Environment" },
+  { question: "Noise is defined as:", options: ["Unwanted sound", "High frequency sound", "Low frequency sound", "Rhythmic sound"], answer: "Unwanted sound", topic: "Environment" },
+  { question: "The feeling of lack of control over one's environment is:", options: ["Crowding", "Density", "Personal Space", "Territoriality"], answer: "Crowding", topic: "Environment" },
+  { question: "Interpersonal physical distance we maintain to feel safe is:", options: ["Personal Space", "Public Space", "Environmental Space", "Territory"], answer: "Personal Space", topic: "Environment" },
+  { question: "Which of the following is a 'Pro-environmental' behavior?", options: ["Recycling", "Wasting water", "Using plastic", "Deforestation"], answer: "Recycling", topic: "Environment" },
+  { question: "The psychological impact of a natural disaster is often called:", options: ["PTSD", "GAD", "OCD", "Bipolar"], answer: "PTSD", topic: "Environment" },
+  { question: "The 'Frustration-Aggression' hypothesis was proposed by:", options: ["Dollard and Miller", "Albert Bandura", "Sigmund Freud", "Konrad Lorenz"], answer: "Dollard and Miller", topic: "Social" },
+  { question: "Seeing violence on TV leads to an increase in aggression due to:", options: ["Observational learning", "Catharsis", "Reinforcement", "Punishment"], answer: "Observational learning", topic: "Social" },
+
+  // --- MODULE 20: SKILLS & ADVANCED ---
+  { question: "Which skill involves listening with empathy and without judgment?", options: ["Active Listening", "Counseling", "Observation", "Testing"], answer: "Active Listening", topic: "Skills" },
+  { question: "Paraphrasing and summarizing are components of:", options: ["Active Listening", "Public Speaking", "Writing", "Logic"], answer: "Active Listening", topic: "Skills" },
+  { question: "The exchange of messages using words is:", options: ["Verbal communication", "Non-verbal communication", "Para-language", "Proxemics"], answer: "Verbal communication", topic: "Skills" },
+  { question: "Body language, eye contact, and gestures are forms of:", options: ["Non-verbal communication", "Verbal communication", "Logical speech", "Introspection"], answer: "Non-verbal communication", topic: "Skills" },
+  { question: "A systematic interview where questions are fixed in advance is:", options: ["Structured interview", "Unstructured interview", "Clinical interview", "Observation"], answer: "Structured interview", topic: "Skills" },
+  { question: "Which is a 'Public' distance in Proxemics?", options: ["Above 12 feet", "4 to 12 feet", "1.5 to 4 feet", "0 to 1.5 feet"], answer: "Above 12 feet", topic: "Skills" },
+  { question: "Counseling is a relationship between:", options: ["Helper and Client", "Doctor and Patient", "Teacher and Student", "Parent and Child"], answer: "Helper and Client", topic: "Skills" },
+  { question: "The PASS model of intelligence stands for:", options: ["Planning, Attention, Simultaneous, Successive", "Pattern, Action, Skill, Soul", "Power, Ability, Strength, Speed", "Primary, Active, Social, Sensory"], answer: "Planning, Attention, Simultaneous, Successive", topic: "Intelligence" },
+  { question: "Who developed the Raven’s Progressive Matrices?", options: ["J.C. Raven", "David Wechsler", "Alfred Binet", "Charles Spearman"], answer: "J.C. Raven", topic: "Intelligence" },
+  { question: "Cultural-fair tests are designed to minimize:", options: ["Cultural bias", "Language", "Mathematics", "Speed"], answer: "Cultural bias", topic: "Intelligence" },
+  { question: "High 'Emotional Intelligence' (EQ) involves:", options: ["Empathy and self-regulation", "High mathematical logic", "Fast memory retrieval", "Artistic talent"], answer: "Empathy and self-regulation", topic: "Intelligence" },
+  { question: "Individual differences are caused by:", options: ["Heredity and Environment", "Only Genes", "Only Luck", "Only Diet"], answer: "Heredity and Environment", topic: "Intelligence" },
+  { question: "The process by which we explain the causes of behavior is:", options: ["Attribution", "Assimilation", "Socialization", "Cognition"], answer: "Attribution", topic: "Social" },
+  { question: "A collection of ideas about a specific object is called a/an:", options: ["Schema", "Stereotype", "Prototype", "Attitude"], answer: "Schema", topic: "Social" },
+  { question: "The 'Source' of a message is more persuasive if they are:", options: ["Credible and attractive", "Aggressive", "Unknown", "Unbiased"], answer: "Credible and attractive", topic: "Social" },
+  { question: "Dissonance is most likely to occur when:", options: ["Behavior contradicts beliefs", "Beliefs match behavior", "Someone is indifferent", "We learn new facts"], answer: "Behavior contradicts beliefs", topic: "Social" },
+  { question: "The Chipko Movement is an example of:", options: ["Pro-environmental action", "Industrial growth", "Political protest", "Scientific research"], answer: "Pro-environmental action", topic: "Environment" },
+  { question: "The psychological feeling of being 'crowded' depends on:", options: ["Perceived control", "Number of people", "Size of room", "Temperature"], answer: "Perceived control", topic: "Environment" },
+  { question: "Which term refers to the behavior intended to harm another person?", options: ["Aggression", "Conflict", "Hostility", "Violence"], answer: "Aggression", topic: "Social" },
+  { question: "Reducing waste by using old glass jars for storage is:", options: ["Repurposing", "Recycling", "Reducing", "Refusing"], answer: "Repurposing", topic: "Environment" },
+  { question: "The state of physical, emotional, and mental exhaustion is:", options: ["Burnout", "Stress", "Fatigue", "Depression"], answer: "Burnout", topic: "Health" },
+  { question: "A coping strategy that involves changing the situation is:", options: ["Problem-focused", "Emotion-focused", "Avoidance", "Denial"], answer: "Problem-focused", topic: "Health" },
+  { question: "Spirituality is often linked to better:", options: ["Mental health", "Memory", "Vision", "Physical speed"], answer: "Mental health", topic: "Health" },
+  { question: "The ethical principle of keeping client info secret is:", options: ["Confidentiality", "Informed Consent", "Competence", "Integrity"], answer: "Confidentiality", topic: "Skills" },
+  { question: "A counselor feeling the same emotions as the client is:", options: ["Empathy", "Sympathy", "Apathy", "Transference"], answer: "Empathy", topic: "Skills" },
+  { question: "Before starting therapy, a client must sign a/an:", options: ["Informed Consent", "Contract", "NDA", "Release form"], answer: "Informed Consent", topic: "Skills" },
+  { question: "Which test is a non-verbal test of intelligence?", options: ["Raven's Matrices", "Stanford-Binet", "WAIS", "Cattell 16PF"], answer: "Raven's Matrices", topic: "Intelligence" },
+  { question: "The 'Ego' operates on which principle?", options: ["Reality", "Pleasure", "Moral", "Ideal"], answer: "Reality", topic: "Personality" },
+  { question: "Who wrote the book 'Interpretation of Dreams'?", options: ["Sigmund Freud", "Carl Jung", "Alfred Adler", "William James"], answer: "Sigmund Freud", topic: "Foundations" },
+  { question: "The TAT (Thematic Apperception Test) was developed by:", options: ["Morgan and Murray", "Hermann Rorschach", "Raymond Cattell", "Gordon Allport"], answer: "Morgan and Murray", topic: "Personality" },
+  { question: "Self-efficacy refers to a person's belief in their:", options: ["Abilities", "Worth", "Appearance", "Past"], answer: "Abilities", topic: "Personality" },
+  { question: "Which of the following is an example of a specific skill?", options: ["Typing", "Intelligence", "Creativity", "Temperament"], answer: "Typing", topic: "Skills" },
+  { question: "The tendency to blame one's failures on external factors is:", options: ["Self-serving bias", "Confirmation bias", "Hindsight bias", "Fundamental attribution error"], answer: "Self-serving bias", topic: "Social" },
+  { question: "Who proposed the 'Frustration-Aggression' hypothesis?", options: ["Dollard and Miller", "Bandura", "Freud", "Lorenz"], answer: "Dollard and Miller", topic: "Social" },
+  { question: "In the GAS model, the third stage is:", options: ["Exhaustion", "Alarm", "Resistance", "Recovery"], answer: "Exhaustion", topic: "Health" },
+  { question: "Which of the following is a primary group?", options: ["Family", "Political Party", "Trade Union", "Work Committee"], answer: "Family", topic: "Social" },
+  // --- MODULE 21: COGNITIVE & PERCEPTUAL BIASES ---
+  { question: "The tendency to overemphasize internal traits when explaining others' behavior is:", options: ["Self-serving bias", "Fundamental Attribution Error", "Halo effect", "Primacy effect"], answer: "Fundamental Attribution Error", topic: "Social" },
+  { question: "Believing that 'everyone knew it all along' after an event occurs is:", options: ["Confirmation bias", "Availability heuristic", "Hindsight bias", "Fixation"], answer: "Hindsight bias", topic: "Cognitive" },
+  { question: "Judging the likelihood of an event based on how easily it comes to mind is:", options: ["Representativeness heuristic", "Anchoring", "Framing", "Availability heuristic"], answer: "Availability heuristic", topic: "Cognitive" },
+  { question: "A mental shortcut that helps us make quick decisions is called a/an:", options: ["Heuristic", "Algorithm", "Logical flow", "Syllogism"], answer: "Heuristic", topic: "Cognitive" },
+
+  // --- MODULE 22: LANGUAGE & THOUGHT ---
+  { question: "The smallest unit of meaning in a language is a:", options: ["Phoneme", "Morpheme", "Syntax", "Lexicon"], answer: "Morpheme", topic: "Cognitive" },
+  { question: "The rules for combining words into sensible sentences is called:", options: ["Semantics", "Grammar", "Syntax", "Pragmatics"], answer: "Syntax", topic: "Cognitive" },
+  { question: "Who argued that humans have an innate 'Language Acquisition Device' (LAD)?", options: ["Noam Chomsky", "B.F. Skinner", "Jean Piaget", "Lev Vygotsky"], answer: "Noam Chomsky", topic: "Cognitive" },
+  { question: "The 'Linguistic Relativity Hypothesis' was proposed by:", options: ["Wundt", "Whorf", "Watson", "Wertheimer"], answer: "Whorf", topic: "Cognitive" },
+
+  // --- MODULE 23: MOTIVATION & EMOTION ---
+  { question: "The 'Drive-Reduction Theory' of motivation was proposed by:", options: ["Abraham Maslow", "Clark Hull", "David McClelland", "William James"], answer: "Clark Hull", topic: "Motivation" },
+  { question: "Performing a task for its own sake is called:", options: ["Extrinsic motivation", "Intrinsic motivation", "Incentive", "Drive"], answer: "Intrinsic motivation", topic: "Motivation" },
+  { question: "The 'Two-Factor Theory' of emotion (Arousal + Label) was proposed by:", options: ["James-Lange", "Cannon-Bard", "Schachter-Singer", "Lazarus"], answer: "Schachter-Singer", topic: "Emotion" },
+  { question: "Which brain structure is the 'Emotional Center', especially for fear?", options: ["Thalamus", "Hippocampus", "Amygdala", "Pons"], answer: "Amygdala", topic: "Biological" },
+
+  // --- MODULE 24: STATES OF CONSCIOUSNESS ---
+  { question: "Which brain waves are associated with deep, dreamless sleep?", options: ["Alpha", "Beta", "Theta", "Delta"], answer: "Delta", topic: "Biological" },
+  { question: "The biological clock that regulates our 24-hour sleep-wake cycle is:", options: ["Circadian Rhythm", "Infradian Rhythm", "Ultradian Rhythm", "Homeostasis"], answer: "Circadian Rhythm", topic: "Biological" },
+  { question: "Sleepwalking is technically known as:", options: ["Insomnia", "Narcolepsy", "Somnambulism", "Sleep Apnea"], answer: "Somnambulism", topic: "Abnormal" },
+
+  // --- MODULE 25: SENSATION & PERCEPTION ---
+  { question: "The conversion of physical energy into neural impulses is:", options: ["Transduction", "Transmission", "Transformation", "Translation"], answer: "Transduction", topic: "Sensation" },
+  { question: "The 'Just Noticeable Difference' (JND) is described by:", options: ["Weber's Law", "Murphy's Law", "Flynn Effect", "Thorndike's Law"], answer: "Weber's Law", topic: "Sensation" },
+  { question: "Which cells in the eye are most sensitive to dim light?", options: ["Cones", "Bipolar cells", "Ganglion cells", "Rods"], answer: "Rods", topic: "Sensation" },
+  { question: "The sense of smell is also known as:", options: ["Gustation", "Olfaction", "Kinesthesis", "Vestibular sense"], answer: "Olfaction", topic: "Sensation" },
+
+  // --- MODULE 26: RESEARCH & STATISTICS ---
+  { question: "Which correlation coefficient represents the weakest relationship?", options: ["+0.10", "-0.90", "+0.50", "-0.05"], answer: "-0.05", topic: "Research" },
+  { question: "A 'Double-Blind' study is used to prevent:", options: ["Hardware error", "Experimenter bias", "Participant attrition", "Small sample size"], answer: "Experimenter bias", topic: "Research" },
+  { question: "The 'Mode' of a data set is the score that occurs:", options: ["Most frequently", "Least frequently", "In the middle", "As an average"], answer: "Most frequently", topic: "Statistics" },
+  { question: "The square root of the variance is called:", options: ["Mean", "Median", "Standard Deviation", "Range"], answer: "Standard Deviation", topic: "Statistics" },
+
+  // --- MODULE 27: ATTITUDE & SOCIAL (Syllabus Focus) ---
+  { question: "The 'Halo Effect' occurs when:", options: ["We assume good people have other good traits", "We blame victims", "We follow orders", "We work less in groups"], answer: "We assume good people have other good traits", topic: "Social" },
+  { question: "Changing behavior to match a group's standards is:", options: ["Obedience", "Compliance", "Conformity", "Altruism"], answer: "Conformity", topic: "Social" },
+  { question: "The tendency to give more weight to the first piece of info we hear is:", options: ["Primacy Effect", "Recency Effect", "Halo Effect", "Contrast Effect"], answer: "Primacy Effect", topic: "Social" },
+  { question: "When we believe someone's behavior is due to the situation, it is a:", options: ["Internal attribution", "External attribution", "Self-serving bias", "Dispositional bias"], answer: "External attribution", topic: "Social" },
+
+  // --- MODULE 28: GROUPS & CONFLICT ---
+  { question: "A formal group usually has:", options: ["Spontaneous rules", "Strict hierarchy and roles", "Short duration", "No specific goal"], answer: "Strict hierarchy and roles", topic: "Social" },
+  { question: "Which stage of group formation involves conflict and disagreement?", options: ["Forming", "Storming", "Norming", "Performing"], answer: "Storming", topic: "Social" },
+  { question: "The final stage of group development is:", options: ["Norming", "Performing", "Adjourning", "Informing"], answer: "Adjourning", topic: "Social" },
+  { question: "Aggression that is used as a means to reach a goal is:", options: ["Hostile aggression", "Instrumental aggression", "Reactive aggression", "Passive aggression"], answer: "Instrumental aggression", topic: "Social" },
+
+  // --- MODULE 29: ENVIRONMENT & LIFE ---
+  { question: "A period of high stress where one feels they cannot cope is:", options: ["Crisis", "Strain", "Eustress", "Homeostasis"], answer: "Crisis", topic: "Health" },
+  { question: "Positive stress that motivates us is called:", options: ["Distress", "Eustress", "Neustress", "Hyperstress"], answer: "Eustress", topic: "Health" },
+  { question: "The study of how people use space is called:", options: ["Kinesics", "Proxemics", "Chronemics", "Haptics"], answer: "Proxemics", topic: "Skills" },
+  { question: "A person's consistent belief in their ability to succeed is:", options: ["Self-esteem", "Self-efficacy", "Self-concept", "Self-regulation"], answer: "Self-efficacy", topic: "Personality" },
+
+  // --- MODULE 30: MISCELLANEOUS NCERT REVIEW ---
+  { question: "The capacity of Sensory Memory is:", options: ["Very large", "Very small", "Exactly 7 items", "Limited to 20 seconds"], answer: "Very large", topic: "Memory" },
+  { question: "Which therapy is most concerned with 'Irrational Beliefs'?", options: ["Psychoanalysis", "REBT", "Humanistic", "Gestalt"], answer: "REBT", topic: "Therapy" },
+  { question: "Who developed the 'General Intelligence' (g) concept?", options: ["Thurstone", "Gardner", "Spearman", "Cattell"], answer: "Spearman", topic: "Intelligence" },
+  { question: "The 'Forgetting Curve' was first studied by:", options: ["James", "Skinner", "Ebbinghaus", "Miller"], answer: "Ebbinghaus", topic: "Memory" },
+  { question: "A 'Phobia' is categorized as what type of disorder?", options: ["Mood", "Anxiety", "Personality", "Psychotic"], answer: "Anxiety", topic: "Abnormal" },
+  { question: "Anorexia Nervosa primarily involves:", options: ["Binge eating", "Fear of weight gain/starvation", "Sleep loss", "Memory loss"], answer: "Fear of weight gain/starvation", topic: "Abnormal" },
+  { question: "The 'Door-in-the-face' technique is used to gain:", options: ["Conformity", "Compliance", "Obedience", "Resistance"], answer: "Compliance", topic: "Social" },
+  { question: "In the 'P-O-X' model, 'O' stands for:", options: ["The Object", "The Other Person", "The Opinion", "The Order"], answer: "The Other Person", topic: "Social" },
+  { question: "Which brain structure regulates thirst and body temperature?", options: ["Pons", "Thalamus", "Hypothalamus", "Medulla"], answer: "Hypothalamus", topic: "Biological" },
+  { question: "The somatic nervous system controls:", options: ["Involuntary muscles", "Voluntary muscles", "Glands", "Internal organs"], answer: "Voluntary muscles", topic: "Biological" },
+  { question: "Who proposed the 'Client-Centered' approach?", options: ["Rogers", "Maslow", "Freud", "Beck"], answer: "Rogers", topic: "Therapy" },
+  { question: "A defense mechanism where one returns to a younger age is:", options: ["Projection", "Regression", "Sublimation", "Denial"], answer: "Regression", topic: "Personality" },
+  { question: "Which parenting style is high in warmth and high in control?", options: ["Authoritarian", "Authoritative", "Permissive", "Neglectful"], answer: "Authoritative", topic: "Development" },
+  { question: "The ability to understand that volume stays the same despite shape is:", options: ["Egocentrism", "Object Permanence", "Conservation", "Centration"], answer: "Conservation", topic: "Development" },
+  { question: "Which test is used to measure 'Hidden' motives?", options: ["MMPI", "16PF", "TAT", "WAIS"], answer: "TAT", topic: "Personality" },
+  { question: "The 'Father of Psychoanalysis' is:", options: ["Jung", "Adler", "Freud", "Erikson"], answer: "Freud", topic: "Foundations" },
+  { question: "Which neurotransmitter is the main excitatory one?", options: ["GABA", "Glutamate", "Serotonin", "Dopamine"], answer: "Glutamate", topic: "Biological" },
+  { question: "In research, 'Validity' means a test measures:", options: ["Consistently", "What it claims to", "Fast", "Easy"], answer: "What it claims to", topic: "Statistics" },
+  { question: "The mean of 5, 5, 5, 5 is:", options: ["5", "20", "0", "1"], answer: "5", topic: "Statistics" },
+  { question: "The study of the mind through brain activity is:", options: ["Behaviorism", "Humanism", "Cognitive Neuroscience", "Psychodynamics"], answer: "Cognitive Neuroscience", topic: "Foundations" }
+];
