@@ -106,7 +106,74 @@ export const questionBank = [
   { question: "Which research method is 'Naturalistic'?", options: ["Lab experiment", "Field observation", "Online survey", "Clinical trial"], answer: "Field observation", topic: "Research" },
   { question: "Standard Deviation is a measure of:", options: ["Central tendency", "Dispersion", "Correlation", "Significance"], answer: "Dispersion", topic: "Research" },
   { question: "The median of 2, 4, 6, 8, 10 is:", options: ["4", "5", "6", "8"], answer: "6", topic: "Research" },
-  { question: "Who developed Rational Emotive Behavior Therapy (REBT)?", options: ["Aaron Beck", "Albert Ellis", "Sigmund Freud", "Carl Jung"], answer: "Albert Ellis", topic: "Therapy" }
+  { question: "Who developed Rational Emotive Behavior Therapy (REBT)?", options: ["Aaron Beck", "Albert Ellis", "Sigmund Freud", "Carl Jung"], answer: "Albert Ellis", topic: "Therapy" },
+  // Add these to your syllabusData.js questionBank
+  { 
+    question: "Who among the following felt that the soul could exist separately from the body?", 
+    options: ["Plato", "De Anima", "Rene Descartes", "Gustav Fechner"], 
+    answer: "Plato", 
+    topic: "Foundations" 
+  },
+  { 
+    question: "The ability of the brain to adapt to the environment and replace function following damage is known as:", 
+    options: ["Lateralization", "Localization", "Neuroplasticity", "Neural degeneration"], 
+    answer: "Neuroplasticity", 
+    topic: "Biological" 
+  },
+  { 
+    question: "Which specific area of the brain is primarily responsible for speech production?", 
+    options: ["Wernicke's area", "Broca's area", "Motor cortex", "Somatosensory cortex"], 
+    answer: "Broca's area", 
+    topic: "Biological" 
+  },
+  { 
+    question: "The cell body of a neuron, responsible for maintaining its life, is called the:", 
+    options: ["Dendrite", "Axon", "Soma", "Glial cell"], 
+    answer: "Soma", 
+    topic: "Biological" 
+  },
+  { 
+    question: "The spinal cord is considered a major component of which nervous system?", 
+    options: ["Autonomic", "Somatic", "Peripheral", "Central"], 
+    answer: "Central", 
+    topic: "Biological" 
+  },
+  { 
+    question: "Chemical substances that mimic or enhance neurotransmitter effects are called:", 
+    options: ["Agonists", "Antagonists", "Antalogists", "Agnologists"], 
+    answer: "Agonists", 
+    topic: "Biological" 
+  },
+  { 
+    question: "Which of these neurotransmitters is most closely linked to calming anxiety?", 
+    options: ["GABA", "Acetylcholine", "Glutamic acid", "Dopamine"], 
+    answer: "GABA", 
+    topic: "Biological" 
+  },
+  { 
+    question: "The Hippocampus is a brain structure primarily involved in:", 
+    options: ["Emotion", "Balance Control", "Memory Formation", "Fear"], 
+    answer: "Memory Formation", 
+    topic: "Biological" 
+  },
+  { 
+    question: "Which therapy technique is explicitly based on the principle of Operant Conditioning?", 
+    options: ["Systematic desensitization", "Aversive conditioning", "Behaviour Modification", "Flooding"], 
+    answer: "Behaviour Modification", 
+    topic: "Learning" 
+  },
+  { 
+    question: "In Operant Conditioning, which of the following is true regarding responses?", 
+    options: ["Responses are involuntary", "Responses are voluntary", "Goal is to decrease response rate", "Reinforcement must be delayed"], 
+    answer: "Responses are voluntary", 
+    topic: "Learning" 
+  },
+  { 
+    question: "Being grounded (losing freedom) due to disobedience is an example of:", 
+    options: ["Positive Reinforcement", "Negative Reinforcement", "Punishment", "Extinction"], 
+    answer: "Punishment", 
+    topic: "Learning" 
+  }
 ];
 
 // NOTE: I have provided a high-quality list of 100 questions covering the most important parts. 
