@@ -173,7 +173,47 @@ export const questionBank = [
     options: ["Positive Reinforcement", "Negative Reinforcement", "Punishment", "Extinction"], 
     answer: "Punishment", 
     topic: "Learning" 
-  }
+  },
+
+  // --- MODULE 6: MOTIVATION & EMOTION ---
+  { question: "The 'Drive-Reduction Theory' of motivation was proposed by:", options: ["Hull", "Maslow", "McClelland", "Vroom"], answer: "Hull", topic: "Motivation" },
+  { question: "Which theory states that we feel emotion AFTER our body reacts (e.g., I'm sad because I'm crying)?", options: ["Cannon-Bard", "James-Lange", "Schachter-Singer", "Lazarus"], answer: "James-Lange", topic: "Emotion" },
+  { question: "The 'Yerkes-Dodson Law' suggests performance is best at:", options: ["Low arousal", "High arousal", "Moderate arousal", "Zero arousal"], answer: "Moderate arousal", topic: "Motivation" },
+  { question: "Which brain structure acts as the 'Hunger Center'?", options: ["Thalamus", "Hypothalamus", "Pons", "Medulla"], answer: "Hypothalamus", topic: "Motivation" },
+  { question: "The need for 'Self-Actualization' is at which level of Maslow's hierarchy?", options: ["Bottom", "Middle", "Top", "Second"], answer: "Top", topic: "Motivation" },
+
+  // --- MODULE 7: SENSATION & PERCEPTION ---
+  { question: "The conversion of physical energy into neural impulses is:", options: ["Perception", "Transduction", "Adaptation", "Coding"], answer: "Transduction", topic: "Sensation" },
+  { question: "The smallest level of stimulus energy required for detection 50% of the time is:", options: ["JND", "Absolute Threshold", "Signal Detection", "Difference Threshold"], answer: "Absolute Threshold", topic: "Sensation" },
+  { question: "Which cells in the eye are responsible for color vision?", options: ["Rods", "Cones", "Ganglion", "Bipolar"], answer: "Cones", topic: "Sensation" },
+  { question: "The sense of body position and movement of body parts is:", options: ["Vestibular", "Kinesthesis", "Olfaction", "Gustation"], answer: "Kinesthesis", topic: "Sensation" },
+  { question: "The Gestalt principle where we fill in gaps to see a complete object is:", options: ["Proximity", "Continuity", "Closure", "Similarity"], answer: "Closure", topic: "Perception" },
+
+  // --- MODULE 8: THERAPEUTIC APPROACHES ---
+  { question: "Which therapy uses 'Empty Chair' techniques?", options: ["Psychoanalysis", "Gestalt Therapy", "REBT", "CBT"], answer: "Gestalt Therapy", topic: "Therapy" },
+  { question: "Systematic Desensitization is primarily used to treat:", options: ["Depression", "Phobias", "Schizophrenia", "Bipolar"], answer: "Phobias", topic: "Therapy" },
+  { question: "Transference and Resistance are key concepts in:", options: ["Humanistic Therapy", "Psychoanalysis", "Behavioral Therapy", "Group Therapy"], answer: "Psychoanalysis", topic: "Therapy" },
+  { question: "The primary goal of CBT (Cognitive Behavioral Therapy) is to change:", options: ["Maladaptive thoughts", "Unconscious drives", "Childhood memories", "Dream content"], answer: "Maladaptive thoughts", topic: "Therapy" },
+  { question: "Who developed 'Client-Centered Therapy'?", options: ["Albert Ellis", "Aaron Beck", "Carl Rogers", "Viktor Frankl"], answer: "Carl Rogers", topic: "Therapy" },
+
+  // --- MODULE 9: STATISTICS & TESTING ---
+  { question: "A distribution where the mean, median, and mode are identical is:", options: ["Skewed", "Normal", "Bimodal", "Kurtotic"], answer: "Normal", topic: "Statistics" },
+  { question: "The 'p-value' in research helps determine:", options: ["Validity", "Statistical Significance", "Reliability", "Skewness"], answer: "Statistical Significance", topic: "Statistics" },
+  { question: "A test that measures what it claims to measure is:", options: ["Reliable", "Valid", "Standardized", "Objective"], answer: "Valid", topic: "Testing" },
+  { question: "The consistency of test scores over time is called:", options: ["Reliability", "Validity", "Norming", "Item analysis"], answer: "Reliability", topic: "Testing" },
+  { question: "Which scale of measurement has a 'True Zero' point?", options: ["Nominal", "Ordinal", "Interval", "Ratio"], answer: "Ratio", topic: "Statistics" },
+
+  // --- MODULE 10: INDUSTRIAL/ORGANIZATIONAL & MISC ---
+  { question: "The 'Hawthorne Effect' refers to:", options: ["Improved performance when watched", "Social loafing", "Leader bias", "Groupthink"], answer: "Improved performance when watched", topic: "I/O" },
+  { question: "A state of focused consciousness on a single stimulus is:", options: ["Divided attention", "Selective attention", "Automaticity", "Vigilance"], answer: "Selective attention", topic: "Cognitive" },
+  { question: "The 'Flynn Effect' refers to the worldwide rise in:", options: ["Anxiety", "IQ scores", "Population", "Depression"], answer: "IQ scores", topic: "Intelligence" },
+  { question: "Which sleep stage is associated with dreaming?", options: ["Stage 1", "Stage 2", "Stage 3/4", "REM"], answer: "REM", topic: "Biological" },
+  { question: "Sleep spindles and K-complexes appear in:", options: ["Stage 1", "Stage 2", "REM", "Deep sleep"], answer: "Stage 2", topic: "Biological" },
+  { question: "Sudden, uncontrollable sleep attacks during the day are:", options: ["Insomnia", "Apnea", "Narcolepsy", "Night Terrors"], answer: "Narcolepsy", topic: "Abnormal" },
+  { question: "The smallest unit of sound in language is a:", options: ["Morpheme", "Phoneme", "Syntax", "Semantics"], answer: "Phoneme", topic: "Cognitive" },
+  { question: "The tendency to search for info that supports our beliefs is:", options: ["Hindsight bias", "Confirmation bias", "Availability heuristic", "Fixation"], answer: "Confirmation bias", topic: "Cognitive" },
+  { question: "A mental 'rule of thumb' for problem-solving is a:", options: ["Algorithm", "Heuristic", "Prototype", "Concept"], answer: "Heuristic", topic: "Cognitive" },
+  { question: "Who proposed the theory of 'Multiple Intelligences'?", options: ["Spearman", "Sternberg", "Howard Gardner", "Binet"], answer: "Howard Gardner", topic: "Intelligence" }
 ];
 
 // NOTE: I have provided a high-quality list of 100 questions covering the most important parts. 

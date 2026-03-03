@@ -143,15 +143,18 @@ function App() {
           </div>
         </main>
         <section className="compact-leaderboard">
-          <div className="scroll-list">
-            {leaderboard.map((player, i) => (
-              <div key={player.id} className={`player-item ${player.id === userId ? 'me' : ''}`}>
-                <span>{i + 1}. {player.name}</span>
-                <strong>{player.score}</strong>
-              </div>
-            ))}
-          </div>
-        </section>
+  {/* Add this heading here */}
+  <h3 className="leaderboard-title">Live Leaderboard</h3>
+  
+  <div className="scroll-list">
+    {leaderboard.slice(0, 10).map((player, i) => (
+      <div key={player.id} className={`player-item ${player.id === userId ? 'me' : ''}`}>
+        <span>{i + 1}. {player.name}</span>
+        <strong>{player.score}</strong>
+      </div>
+    ))}
+  </div>
+</section>
       </div>
     </div>
   );
