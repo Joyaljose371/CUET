@@ -50,3 +50,17 @@ body, html { margin: 0; padding: 0; background: var(--bg); min-height: 100vh; fo
 .restart-link:hover {
   color: #f8fafc;
 }
+.developer-watermark {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  text-align: right;
+  font-size: 11px;
+  color: rgba(148, 163, 184, 0.5); /* Subtle transparency */
+  pointer-events: none; /* Won't block clicks */
+  line-height: 1.4;
+  z-index: 1000;
+}
+.developer-watermark strong {
+  color: rgba(148, 163, 184, 0.8);
+}

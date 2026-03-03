@@ -139,6 +139,11 @@ function App() {
                 }
                 return <button key={i} className={btnClass} onClick={() => handleAnswer(opt)}>{opt}</button>;
               })}
+              <div className="developer-watermark">
+  <p><strong>Developed by: Joyal Jose</strong></p>
+  <p>Frontend Developer | Psychology Aspirant</p>
+  <p>Joyaljosepallivathukkal371@gmail.com</p>
+</div>
             </div>
           </div>
         </main>
