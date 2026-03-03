@@ -17,7 +17,6 @@ function App() {
   const [selectedOpt, setSelectedOpt] = useState(null);
   const [isCorrect, setIsCorrect] = useState(null);
 
-  // Persistent User ID to track progress
   const [userId] = useState(localStorage.getItem('cuet_userId') || "user_" + Math.random().toString(36).substr(2, 9));
   const [userName, setUserName] = useState(localStorage.getItem('cuet_user') || "");
 
@@ -26,14 +25,14 @@ function App() {
   useEffect(() => {
     localStorage.setItem('cuet_userId', userId);
     
-    // Load leaderboard
+    // Real-time Leaderboard Sync
     const q = query(collection(db, "leaderboard"), orderBy("score", "desc"));
     const unsubscribe = onSnapshot(q, (snapshot) => {
       setLeaderboard(snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() })));
     });
     
-    const shuffled = [...questionBank]; // Remove random shuffle to keep "Stages" consistent for progress
-    setQuestions(shuffled);
+    // Load Question Bank
+    setQuestions([...questionBank]);
 
     return () => unsubscribe();
   }, [userId]);
@@ -45,19 +44,26 @@ function App() {
     localStorage.setItem('cuet_user', userName);
 
     if (isNewGame) {
-      // RESET ALL DATA
+      
       setCurrentIdx(0);
       setLevel(1);
       setScore(0);
       setIsFinished(false);
     } else {
-      // TRY TO RESUME FROM FIREBASE
+
       const userDoc = await getDoc(doc(db, "leaderboard", userId));
       if (userDoc.exists()) {
         const data = userDoc.data();
-        setCurrentIdx(data.currentIdx || 0);
-        setLevel(data.level || 1);
-        setScore(data.score || 0);
+        const savedIdx = data.currentIdx || 0;
+        
+        // CHECK: If saved index is at or beyond the total questions, show finished screen
+        if (savedIdx >= questionBank.length) {
+          setIsFinished(true);
+        } else {
+          setCurrentIdx(savedIdx);
+          setLevel(data.level || 1);
+          setScore(data.score || 0);
+        }
       }
     }
     setIsStarted(true);
@@ -73,37 +79,49 @@ function App() {
     const newScore = correct ? score + 4 : score - 1;
     setScore(newScore);
 
-    // SAVE PROGRESS LIVE
-    await setDoc(doc(db, "leaderboard", userId), { 
-      name: userName, 
-      score: newScore,
-      currentIdx: currentIdx + 1, // Prepare next index
-      level: Math.floor((currentIdx + 1) / QUESTIONS_PER_LEVEL) + 1
-    }, { merge: true });
+    // Save Live Progress to Firebase
+    try {
+      await setDoc(doc(db, "leaderboard", userId), { 
+        name: userName, 
+        score: newScore,
+        currentIdx: currentIdx + 1,
+        level: Math.floor((currentIdx + 1) / QUESTIONS_PER_LEVEL) + 1
+      }, { merge: true });
+    } catch (e) {
+      console.error("Sync Error:", e);
+    }
 
+    // Transition Logic
     setTimeout(() => {
-      const nextIdx = currentIdx + 1;
-      const isEndOfLevel = nextIdx % QUESTIONS_PER_LEVEL === 0;
-      const isLastQuestion = nextIdx === questions.length;
+      const nextIndex = currentIdx + 1;
+      
+      // Check if finished
+      if (nextIndex >= questions.length) {
+        setSelectedOpt(null);
+        setIsCorrect(null);
+        setIsFinished(true);
+        return;
+      }
+
+      const isEndOfLevel = nextIndex % QUESTIONS_PER_LEVEL === 0;
 
       setSelectedOpt(null);
       setIsCorrect(null);
 
-      if (isLastQuestion) {
-        setIsFinished(true);
-      } else if (isEndOfLevel) {
+      if (isEndOfLevel) {
         setShowLevelUp(true);
         setTimeout(() => {
           setShowLevelUp(false);
           setLevel(prev => prev + 1);
-          setCurrentIdx(nextIdx);
+          setCurrentIdx(nextIndex);
         }, 1500);
       } else {
-        setCurrentIdx(nextIdx);
+        setCurrentIdx(nextIndex);
       }
     }, 1200);
   };
 
+  // Welcome Screen
   if (!isStarted) {
     return (
       <div className="game-wrapper">
@@ -115,16 +133,46 @@ function App() {
             <button onClick={(e) => handleStart(e, true)} className="restart-link">Start Fresh Session</button>
           </form>
         </div>
+        <div className="developer-watermark">
+          <p><strong>Developed by: Joyal Jose</strong></p>
+          <p>Frontend Developer | Psychology Aspirant</p>
+          <p>Joyaljosepallivathukkal371@gmail.com</p>
+        </div>
       </div>
     );
   }
 
-  // ... (Rest of your return JSX remains the same as previous)
+  // Final Finished Screen
+  if (isFinished) {
+    return (
+      <div className="game-wrapper">
+        <div className="welcome-card">
+          <h2 style={{ color: '#6366f1' }}>Quiz Complete! 🎉</h2>
+          <p>You have mastered the question bank.</p>
+          <div style={{ margin: '20px 0', padding: '15px', background: 'rgba(255,255,255,0.05)', borderRadius: '10px' }}>
+            <h3 style={{ margin: '0', fontSize: '1.8rem' }}>{score}</h3>
+            <p style={{ margin: '5px 0 0', fontSize: '0.75rem', opacity: 0.6, letterSpacing: '1px' }}>FINAL SCORE</p>
+          </div>
+          <p>Stages Mastered: <strong>{level}</strong></p>
+          <button className="start-btn" style={{ width: '100%', marginTop: '10px' }} onClick={() => window.location.reload()}>Restart Session</button>
+        </div>
+        <div className="developer-watermark">
+          <p><strong>Developed by: Joyal Jose</strong></p>
+          <p>Frontend Developer | Psychology Aspirant</p>
+          <p>Joyaljosepallivathukkal371@gmail.com</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Active Quiz Screen
   return (
     <div className="game-wrapper">
       {showLevelUp && <div className="level-up-overlay"><h1>STAGE {level + 1} 🚀</h1></div>}
+      
       <div className="main-container">
         <div className="top-score-bar">🏆 Stage {level} | Score: {score}</div>
+
         <main className="quiz-card">
           <div className="quiz-inner">
             <h2 className="question-text">{questions[currentIdx]?.question}</h2>
@@ -137,29 +185,33 @@ function App() {
                   if (isThisCorrect) btnClass += " correct";
                   if (isThisSelected && !isCorrect) btnClass += " wrong";
                 }
-                return <button key={i} className={btnClass} onClick={() => handleAnswer(opt)}>{opt}</button>;
+                return (
+                  <button key={i} className={btnClass} onClick={() => handleAnswer(opt)}>
+                    {opt}
+                  </button>
+                );
               })}
-              <div className="developer-watermark">
-  <p><strong>Developed by: Joyal Jose</strong></p>
-  <p>Frontend Developer | Psychology Aspirant</p>
-  <p>Joyaljosepallivathukkal371@gmail.com</p>
-</div>
             </div>
           </div>
         </main>
+
         <section className="compact-leaderboard">
-  {/* Add this heading here */}
-  <h3 className="leaderboard-title">Live Leaderboard</h3>
-  
-  <div className="scroll-list">
-    {leaderboard.slice(0, 10).map((player, i) => (
-      <div key={player.id} className={`player-item ${player.id === userId ? 'me' : ''}`}>
-        <span>{i + 1}. {player.name}</span>
-        <strong>{player.score}</strong>
+          <h3 className="leaderboard-title">Live Leaderboard</h3>
+          <div className="scroll-list">
+            {leaderboard.map((player, i) => (
+              <div key={player.id} className={`player-item ${player.id === userId ? 'me' : ''}`}>
+                <span>{i + 1}. {player.name}</span>
+                <strong>{player.score}</strong>
+              </div>
+            ))}
+          </div>
+        </section>
       </div>
-    ))}
-  </div>
-</section>
+
+      <div className="developer-watermark">
+        <p><strong>Developed by: Joyal Jose</strong></p>
+        <p>Frontend Developer | Psychology Aspirant</p>
+        <p>Joyaljosepallivathukkal371@gmail.com</p>
       </div>
     </div>
   );
