@@ -97,26 +97,41 @@ function App() {
   };
 
   return (
-    <div className="game-wrapper">
-      {isAdmin ? (
-        <div className="admin-container">
-          <h2>Admin Leaderboard</h2>
+  <div className="game-wrapper">
+    {isAdmin ? (
+      <div className="admin-container">
+        <h2>Admin Leaderboard</h2>
+        
+        {/* Wrap the table in this scroll container */}
+        <div className="leaderboard-scroll-container">
           <table className="admin-table">
             <thead>
-              <tr><th>Rank</th><th>Name</th><th>Score</th><th>Stage</th></tr>
+              <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Score</th>
+                <th>Stage</th>
+              </tr>
             </thead>
             <tbody>
               {leaderboard.map((p, i) => (
                 <tr key={p.id} className={p.id === userId ? 'admin-me' : ''}>
-                  <td>{i+1}</td><td>{p.name} {p.id === userId && "(You)"}</td><td>{p.score}</td><td>{p.level}</td>
+                  <td>{i + 1}</td>
+                  <td>{p.name} {p.id === userId && "(You)"}</td>
+                  <td>{p.score}</td>
+                  <td>{p.level}</td>
                 </tr>
               ))}
             </tbody>
           </table>
-          <button className="restart-link" onClick={() => window.location.search = ''}>Back to Quiz</button>
         </div>
-      ) : (
-        <>
+
+        <button className="restart-link" onClick={() => window.location.search = ''}>
+          Back to Quiz
+        </button>
+      </div>
+    ) : (
+      <>
           {!isStarted ? (
             <div className="welcome-card animate-in">
               <h2>Applied Psychology Entrance Prep</h2>
