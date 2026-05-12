@@ -101,3 +101,43 @@ body, html { margin: 0; padding: 0; background: var(--bg); min-height: 100vh; fo
   border-left: 4px solid #6366f1; /* Indigo accent border */
   font-weight: bold;
 }
+/* 1. The Container */
+.leaderboard-scroll-container {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  border: 1px solid #0f172a;
+  border-radius: 8px;
+  /* Crucial: separate borders allow sticky to work without gaps */
+  border-collapse: separate; 
+  border-spacing: 0;
+  background-color: #0f172a; 
+}
+
+/* 2. The Table */
+.admin-table {
+  width: 100%;
+  border-spacing: 0; /* Ensures no tiny gaps between cells */
+  margin: 0;
+}
+
+/* 3. The Sticky Header */
+.admin-table thead th {
+  position: sticky;
+  top: 0;
+  /* Explicitly set the color so it's not transparent */
+  background-color: #0f172a !important; 
+  z-index: 10; 
+  padding: 12px;
+  border-bottom: 2px solid rgba(99, 102, 241, 0.2);
+  /* This prevents white lines from bleeding through the background */
+  background-clip: padding-box; 
+}
+
+/* 4. Fix top corners if they look sharp */
+.admin-table thead tr:first-child th:first-child {
+  border-top-left-radius: 8px;
+}
+.admin-table thead tr:first-child th:last-child {
+  border-top-right-radius: 8px;
+}
