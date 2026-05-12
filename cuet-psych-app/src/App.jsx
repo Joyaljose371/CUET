@@ -119,7 +119,7 @@ function App() {
         <>
           {!isStarted ? (
             <div className="welcome-card animate-in">
-              <h2>CUET Psychology</h2>
+              <h2>Applied Psychology Entrance Prep</h2>
               <form className="name-form">
                 <input type="text" placeholder="Enter Name" value={userName} onChange={(e) => setUserName(e.target.value)} required />
                 <button onClick={(e) => handleStart(e, false)} className="start-btn">Resume Progress</button>
